@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Animated Checkboxes and Radio Buttons with SVG</title>
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+            <div class="innerLiner">
+			<span class="box">
+			 <section>
+				<form class="ac-custom ac-radio ac-circle" autocomplete="off">
+					<h2>Do you want to know the latest celebrity news?</h2>
+					<ul>
+						<li><input id="r1" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r2" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                </form>
+            </section>
+                <<input class="nextBtn" type="button" value="Next">
+                </span>
+            <span class="box box2">
+            <section>
+                <form class="ac-custom ac-radio ac-circle" autocomplete="off">
+                    <h2>Do you want to update people about big events in your life?</h2>
+                    <ul>
+						<li><input id="r1" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r2" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    </form>
+            </section>
+                <input class="backBtn" type="button" value="Back">
+  </span>
+            </div>
+            </div>
+        <!--
+             <form class="ac-custom ac-radio ac-circle" autocomplete="off">
+                    <h2>Do you want to update people about your day?</h2>
+                    <ul>
+						<li><input id="r3" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r4" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to learn things like new recipes, crafts, or DIY (do it yourself) projects?</h2>
+                    <ul>
+                        </form>
+						<li><input id="r5" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r6" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to play games?</h2>
+                    <ul>
+						<li><input id="r7" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r8" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to text message people?</h2>
+                    <ul>
+						<li><input id="r9" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r10" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to picture message people?</h2>
+                    <ul>
+						<li><input id="r11" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r12" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to video message people?</h2>
+                    <ul>
+						<li><input id="r13" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r14" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+                    <h2>Do you want to blog (blogging is sharing what you think by writing, taking pictures, or sharing videos)?</h2>
+                    <ul>
+						<li><input id="r15" name="r2" type="radio"><label for="r5">Yes</label></li>
+						<li><input id="r16" name="r2" type="radio"><label for="r6">No</label></li>
+					</ul>
+				</form>
+			</section>
+					</div><!-- /container -->
+		<script src="js/svgcheckbx.js"></script>
+        <script src="vendor/jquery.easing.min.js"></script>
+
+$(document).ready(function() {
+    
+// removed extra stuff to focus on the easing change
+
+function goRight(){ // inner stuff slides left
+    var initalLeftMargin = $( ".innerLiner" ).css('margin-left').replace("px", "")*1;
+    var newLeftMargin = (initalLeftMargin - 322); // extra 2 for border
+    // $( ".innerLiner" ).animate({marginLeft: newLeftMargin}, 500);
+    $( ".innerLiner" ).animate({ marginLeft: newLeftMargin }, 500, 'easeOutBounce');
+}
+
+});
+</script>
+	</body>
+</html>
