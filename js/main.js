@@ -4,6 +4,15 @@ var counter=1;
 var q_counter=1;
 var key=0;
 var i=1;
+var twitter=0;
+var facebook=0;
+var instagram=0;
+var pintrest=0;
+var youtube=0;
+var snapchat=0;
+var tumblr=0;
+
+
 function myFunction(event) {
 key = event.which;
 if(key==37)
@@ -30,7 +39,6 @@ document.getElementById("bkbtn").className = "btn btn-info btn-md disabled";
 } 
 else
 {
-
 $('#q-'+counter).attr("hidden",false);
 document.getElementById("nxbtn").className = "btn btn-info btn-md"
 }
