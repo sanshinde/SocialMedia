@@ -44,9 +44,9 @@ document.getElementById("nxbtn").className = "btn btn-info btn-md"
 }
 }
 function slide_right(){
-    $('#q-'+counter).attr("hidden",true);
+$('#q-'+counter).attr("hidden",true);
 counter+=1;
-if(counter==9)
+if(counter>=9)
 {
 $('#q-9').attr("hidden",false);
 document.getElementById("nxbtn").className = "btn btn-info btn-md disabled"; 
