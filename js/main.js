@@ -20,6 +20,8 @@ var flagq6=0;
 var flagq7=0;
 var flagq8=0;
 var flagq9=0;
+var j=0;
+var choice=[5];
 
 
 function myFunction(event) {
@@ -65,8 +67,50 @@ function slide_right() {
 //if(document.getElementsByName('optradio-q-'+counter)[0].value=="Yes")
       //cal(counter);
 
-//function calculate()
-//{ 
+function calculate(){
+    var correctsm =Math.max(instagram,twitter,facebook,pintrest,youtube,snapchat,tumblr);
+    if(correctsm==instagram)
+        {
+            choice[j] = "Instagram";
+            j++;
+        }
+    if(correctsm==twitter)
+        {
+            choice[j] = "Twitter";
+            j++;
+        }
+    if(correctsm==facebook)
+        {
+            choice[j] = "Facebook";
+            j++;
+        }
+    if(correctsm==pintrest)
+        {
+            choice[j] = "Pintrest";
+            j++;
+        }
+    if(correctsm==youtube)
+        {
+            choice[j] = "Youtube";
+            j++;
+        }
+    if(correctsm==snapchat)
+        {
+            choice[j] = "Snapchat";
+            j++;
+        }
+    if(correctsm == tumblr)
+        {
+            choice[j] == "Tumblr";
+            j++;
+        }
+    for(var k=0;k<j;k++)
+        {
+    document.getElementById("txt").innerHTML = j;
+        /*"Choice"+choice[k];*/
+            }
+}
+ 
 function calno() {
     
     switch(counter){
