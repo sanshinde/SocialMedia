@@ -21,7 +21,7 @@ var flagq7=0;
 var flagq8=0;
 var flagq9=0;
 var j=0;
-var choice=[5];
+var choice=new Array();
 
 
 function myFunction(event) {
@@ -68,47 +68,61 @@ function slide_right() {
       //cal(counter);
 
 function calculate(){
+    window.open('result.html',"_self");
     var correctsm =Math.max(instagram,twitter,facebook,pintrest,youtube,snapchat,tumblr);
-    if(correctsm==instagram)
+    if(correctsm == instagram)
         {
             choice[j] = "Instagram";
+           
             j++;
         }
-    if(correctsm==twitter)
+     if(correctsm == twitter)
         {
             choice[j] = "Twitter";
+            
             j++;
         }
-    if(correctsm==facebook)
+     if(correctsm == facebook)
         {
             choice[j] = "Facebook";
+            
             j++;
         }
-    if(correctsm==pintrest)
+     if(correctsm == pintrest)
         {
             choice[j] = "Pintrest";
+            
             j++;
         }
-    if(correctsm==youtube)
+     if(correctsm == youtube)
         {
             choice[j] = "Youtube";
+            
             j++;
         }
-    if(correctsm==snapchat)
+     if(correctsm == snapchat)
         {
             choice[j] = "Snapchat";
+            
             j++;
         }
-    if(correctsm == tumblr)
+    
+        if(correctsm == tumblr)
         {
-            choice[j] == "Tumblr";
+            choice[j] = "Tumblr";
+           
             j++;
         }
-    for(var k=0;k<j;k++)
-        {
-    document.getElementById("txt").innerHTML = j;
-        /*"Choice"+choice[k];*/
-            }
+         if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("choice",  JSON.stringify(choice));
+}    
+            
+       }
+function display(){
+   // window.open('result.html');
+    choice = JSON.parse(localStorage.getItem("choice"));
+    document.getElementById("myText").innerHTML = choice;
+    
 }
  
 function calno() {
