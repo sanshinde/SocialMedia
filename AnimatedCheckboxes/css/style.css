@@ -3,28 +3,28 @@
     
     background: rgba(91, 192, 222, 0.3);
     filter: alpha(opacity=50);
-    width: 50em;
-    height: 25em;
-    margin: auto;
-    text-align: center;
+    width: 70em;
+    height: 30em;
+   /* margin: auto;*/
+   text-align: center; 
     margin-top: 5em;
-   /*transition*/
+   /*transition
     -webkit-transition-property: width; /* Safari */
-    -webkit-transition-duration: 2s; /* Safari */
-    transition-property: width;
-    transition-duration: 2s;
+   /* -webkit-transition-duration: 2s; /* Safari */
+   /* transition-property: width;
+    transition-duration: 2s; */
     
 }
 .main-content{
-    position: relative;
+    /*position: relative;*/
 }
-h2{
+/*h2{
     font-family: 'Gabriela', serif;
     color: black;
     opacity: 1.0 !important;
     text-align: center;
     
-}
+} */
 
 .btn{
     font-size: 20px;
@@ -33,6 +33,7 @@ h2{
 
 .backbtn{
     float: left;
+    position: fixed;
     font-family: 'Spectral', serif;
     margin-left: 15em;
     margin-top: 1em;
@@ -51,7 +52,7 @@ h2{
 }
 
 body{
-text-align: center;    
+text-align: center;   
 }
 
 p {

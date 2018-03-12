@@ -1,121 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Social Media Quiz</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Animated Checkboxes and Radio Buttons with SVG</title>
+		<meta name="description" content="Animated Checkboxes and Radio Buttons with SVG: Using SVG for adding some fancy 'check' animations to form inputs" />
+		<meta name="keywords" content="animated checkbox, svg, radio button, styled checkbox, css, pseudo element, form, animated svg" />
+		<meta name="author" content="Codrops" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Alegreya|Delius|Gabriela|Merienda|Spectral" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="style.css" />
-      <link href="MDB%2520Free/css/mdb.min.css" rel="stylesheet">
-       <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
-		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-      <script type="text/javascript" src="js/main.js"></script> 
-   </head>
-   <body onload="myFunction()">
-       <form action="result.html" method="get">
-      <div class="main-content">
-         <div class="container">
-            <div id="q-1" hidden="true">
-               <h2>Do you want to know the latest celebrity news?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-1" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-1" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-2" hidden="true">
-               <h2>Do you want to update people about big events in your life?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-2" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-2" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-3" hidden="true">
-               <h2>Do you want to update people about your day?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-3" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-3" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-4" hidden="true">
-               <h2>Do you want to learn things like new recipes, crafts, or DIY (do it yourself) projects?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-4" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-4" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-5" hidden="true">
-               <h2>Do you want to play games?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-5" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-5" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-6" hidden="true">
-               <h2>Do you want to text message people?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-6" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-6" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-7" hidden="true">
-               <h2>Do you want to picture message people?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-7" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-7" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-8" hidden="true">
-               <h2>Do you want to video message people?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-8" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-8" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-            <div id="q-9" hidden="true">
-               <h2>Do you want to blog (blogging is sharing what you think by writing, taking pictures, or sharing videos)?</h2>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-9" value="Yes" onchange="calyes()">Yes</label>
-               </div>
-               <div class="radio">
-                  <label><input type="radio" name="optradio-q-9" value="No" onchange="calno()">No</label>
-               </div>
-            </div>
-         </div>
-         <div class="buttons">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+     <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body onload="myFunction()">
+		
+			<!-- Top Navigation -->				
+			
+				<form class="ac-custom ac-radio ac-fill" autocomplete="off" action="result.html">
+					<div class="container">
+                    <div id="q-1" hidden="true">
+                    <p id="que">Do you want to know the latest celebrity news?</p>
+					<ul>
+						<li><input id="r1" name="r1" type="radio" onchange="calyes()"><label for="r1">Yes</label></li>
+						<li><input id="r2" name="r1" type="radio" onchange="calno()"><label for="r2">No</label></li>
+						</ul>
+                    </div> 
+                    <div id="q-2" hidden="true">
+                    <p id="que">Do you want to update people about big events in your life?</p>
+                        <ul>
+						<li><input id="r3" name="r2" type="radio" onchange="calyes()"><label for="r3">Yes</label></li>
+						<li><input id="r4" name="r2" type="radio" onchange="calno()"><label for="r4">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-3" hidden="true">
+                    <p id="que">Do you want to update people about your day?</p>
+                        <ul>
+						<li><input id="r5" name="r3" type="radio" onchange="calyes()"><label for="r5">Yes</label></li>
+						<li><input id="r6" name="r3" type="radio" onchange="calno()"><label for="r6">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-4" hidden="true">
+                    <p id="que">Do you want to learn things like new recipes, crafts, or DIY (do it yourself) projects?</p>
+                        <ul>
+						<li><input id="r7" name="r4" type="radio" onchange="calyes()"><label for="r7">Yes</label></li>
+						<li><input id="r8" name="r4" type="radio" onchange="calno()"><label for="r8">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-5" hidden="true">
+                    <p id="que">Do you want to play games?</p>
+                        <ul>
+						<li><input id="r9" name="r5" type="radio" onchange="calyes()"><label for="r9">Yes</label></li>
+						<li><input id="r10" name="r5" type="radio" onchange="calno()"><label for="r10">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-6" hidden="true">
+                    <p id="que">Do you want to text message people?</p>
+                        <ul>
+						<li><input id="r11" name="r6" type="radio" onchange="calyes()"><label for="r11">Yes</label></li>
+						<li><input id="r12" name="r6" type="radio" onchange="calno()"><label for="r12">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-7" hidden="true">
+                    <p id="que">Do you want to picture message people?</p>
+                        <ul>
+						<li><input id="r13" name="r7" type="radio" onchange="calyes()"><label for="r13">Yes</label></li>
+						<li><input id="r14" name="r7" type="radio" onchange="calno()"><label for="r14">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-8" hidden="true">
+                    <p id="que">Do you want to video message people?</p>
+                        <ul>
+						<li><input id="r15" name="r8" type="radio" onchange="calyes()"><label for="r15">Yes</label></li>
+						<li><input id="r16" name="r8" type="radio" onchange="calno()"><label for="r16">No</label></li>
+						</ul>
+                    </div>
+                    <div id="q-9" hidden="true">
+                    <p id="que">Do you want to blog (blogging is sharing what you think by writing, taking pictures, or sharing videos)?</p>
+                        <ul>
+						<li><input id="r17" name="r9" type="radio" onchange="calyes()"><label for="r17">Yes</label></li>
+						<li><input id="r18" name="r9" type="radio" onchange="calno()"><label for="r18">No</label></li>
+						</ul>
+                    </div>
+                    </div>
+                     <div class="buttons">
             <div class="backbtn">
-               <button type="button" id="bkbtn" class="btn btn-info btn-md" onclick="slide_left()">Back</button>
+               <button type="button" id="bkbtn" class="btn btn-md" onclick="slide_left()">Back</button>
             </div>
              
             <div  class="nextbtn">
-               <button type="button" id="nxbtn" class="btn btn-info btn-md" onclick="slide_right()">Next</button>
+               <button type="button" id="nxbtn" class="btn btn-md" onclick="slide_right()">Next</button>
             </div>
-         </div>
-          <button type="button" id="submit" class="btn btn-info btn-md" onclick="calculate();" style="visibility: hidden">Submit</button>
+         
+          <button type="button" id="submit" class="btn btn-md" onclick="calculate();" style="visibility: hidden">Submit</button>
 
-      </div>
-       <br><br><div id="txt" style="text-align: center">  
+     </div>
+     <!--  <br><br><div id="txt" style="text-align: center">  
        
-                         </div>
-      </form>
-      
-   </body>
+                         </div> -->
+            
+               </form>
+			
+            
+						
+		<!-- /container -->
+		<script src="js/svgcheckbx.js"></script>
+	</body>
+</html>

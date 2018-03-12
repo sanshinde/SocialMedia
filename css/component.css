@@ -39,7 +39,8 @@
 	font-size: 2em;
 	padding: 0 0 0 80px;
 	vertical-align: top;
-	color:rgba(0,0,0,0.2); /*No color transformation when yes is selected */
+    color: #000;
+	/*color:rgba(0,0,0,0.2); /*No color transformation when yes is selected */
 	cursor: pointer;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -48,10 +49,10 @@
 .ac-custom input[type="checkbox"],
 .ac-custom input[type="radio"],
 .ac-custom label::before {
-	width: 50px;
+	width: 50px; /*radius of the circle */
 	height: 50px;
 	top: 50%;
-	left: 0;
+	left: 0px;
 	margin-top: -25px;
 	position: absolute;
 	cursor: pointer;
@@ -74,7 +75,7 @@
 }
 
 .ac-radio label::before {
-	border-radius: 50%;
+	border-radius: 50%; /* can be toggled to change to rounded rectangle */
 }
 
 .ac-custom input[type="checkbox"]:checked + label,
@@ -84,7 +85,7 @@
 
 .ac-custom input[type="checkbox"]:checked + label::before,
 .ac-custom input[type="radio"]:checked + label::before {
-	opacity: 0.8;
+	opacity: 1.0; /* color of circle after checked */
 }
 
 /* General SVG and path styles */
@@ -95,7 +96,7 @@
 	height: 40px;
 	top: 50%;
 	margin-top: -20px;
-	left: 345px;
+	left: 280px; /*position of the scribble */
 	pointer-events: none;
 }
 

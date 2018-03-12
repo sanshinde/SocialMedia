@@ -1,1 +1,115 @@
-/* Your custom styles */
+
+.container{
+    
+    background: #FEB106;
+    /*filter: alpha(opacity=50); */
+    width: 60em;
+    height: 30em;
+    margin: auto;
+    text-align: center;
+    margin-top: 5em;
+   /*transition*/
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    border-radius: 20px;
+    padding-top: 30px;
+    
+    
+}
+.main-content{
+    position: relative;
+}
+
+.circle {
+    margin: auto;
+    margin-top: 100px;
+    background-color: #FEB106;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    color: #000000;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center !important ;
+    vertical-align: middle;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+     background-color: #F80100;
+    border-color: #F80100;
+        color: #fff;
+
+}
+btn:disabled{
+    background-color: #FF4744 ;
+    border-color: #FF4744;
+    color: #fff;
+}
+
+.btn:focus,.btn:hover{
+   text-decoration: none !important;
+     color: #fff;
+    
+}
+
+.backbtn{
+    float: left;
+    font-family: 'Spectral', serif;
+    margin-left: 15em;
+    margin-top: 1em;
+    color: #fff;
+}
+
+btn:visited{
+    text-decoration: none ;
+}
+.btn-info {
+   
+}
+
+.submitbtn{
+    text-align: center;
+    font-family: 'Spectral', serif;
+}
+
+.nextbtn{
+    float:right;
+    font-family: 'Spectral', serif;
+    margin-right: 15em;
+    margin-top: 1em;
+}
+
+body{
+text-align: center;   
+background-color: #00B9ED;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Gabriela', serif;
+    font-weight: 800;
+    line-height: 35px;
+    font-stretch: expanded;
+}
+
+#que{
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.button-wrapper {
+     font-family: 'Spectral', serif;
+    
+    }
+
+#txt{
+    height: 200px;
+    width: 50%;
+}
+ 

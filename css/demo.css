@@ -13,7 +13,8 @@
 body {
 	/*background: #fb887c;*/
 	color: #000;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Gabriela', serif;
+    font-weight: 900;
 }
 
 a {
@@ -92,7 +93,7 @@ section.related {
 }
 
 .codrops-icon:before {
-	font-family: 'codropsicons';
+	font-family: 'Gabriela', serif;
 	margin: 0 4px;
 	speak: none;
 	font-style: normal;
