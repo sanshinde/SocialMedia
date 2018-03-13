@@ -19,6 +19,8 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  
+      <link rel="stylesheet" href="css/submitcss.css">
 		<script src="js/modernizr.custom.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 	</head>
@@ -100,10 +102,16 @@
             <div  class="nextbtn">
                <button type="button" id="nxbtn" class="btn btn-md" onclick="slide_right()">Next</button>
             </div>
-         
+                         </div>
+          <div class="btn-wrapper">
+	       <button type="button" class="btn" id="sub" onclick="drawParticles();" >Submit</button>
+              
+            </div>
+             <canvas id="canvas"></canvas>    
+                          
           <button type="button" id="submit" class="btn btn-md" onclick="calculate();" style="visibility: hidden">Submit</button>
 
-     </div>
+    
      <!--  <br><br><div id="txt" style="text-align: center">  
        
                          </div> -->
@@ -114,5 +122,6 @@
 						
 		<!-- /container -->
 		<script src="js/svgcheckbx.js"></script>
+         <script  src="js/submitjs.js"></script>
 	</body>
 </html>
