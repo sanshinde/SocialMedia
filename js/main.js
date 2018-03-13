@@ -64,7 +64,7 @@ function slide_right() {
     if (counter >= 9) {
         $('#q-9').attr("hidden", false);
         document.getElementById("nxbtn").className = "btn btn-md disabled";
-        document.getElementById("submit").style.visibility = "visible";
+        document.getElementById("sub").style.visibility = "visible";
     } else {
         $('#q-' + counter).attr("hidden", false);
         document.getElementById("bkbtn").className = "btn btn-md";

@@ -69,14 +69,14 @@ btn:disabled{
 btn:visited{
     text-decoration: none ;
 }
-.btn-info {
-   
-}
 
-.submitbtn{
-    text-align: center;
-    font-family: 'Spectral', serif;
+/*
+
+#sub{
+        margin-top: 200px;
 }
+*/
+
 
 .nextbtn{
     float:right;
