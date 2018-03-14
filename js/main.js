@@ -126,25 +126,25 @@ function display() {
     }
     for (res = 0; res < cholen; res++) {
         if (resarr[res] == resfacebook) {
-            document.getElementById("fbook").style.visibility = "visible";
+            document.getElementById("fbook").style.display = "block";
         }
         if (resarr[res] == restwitter) {
-            document.getElementById("twit").style.visibility = "visible";
+            document.getElementById("twit").style.display = "block";
         }
         if (resarr[res] == resinstagram) {
-            document.getElementById("insta").style.visibility = "visible";
+            document.getElementById("insta").style.display = "block";
         }
         if (resarr[res] == respintrest) {
-            document.getElementById("pint").style.visibility = "visible";
+            document.getElementById("pint").style.display = "block";
         }
         if (resarr[res] == resyoutube) {
-            document.getElementById("ytube").style.visibility = "visible";
+            document.getElementById("ytube").style.display = "block";
         }
         if (resarr[res] == ressnapchat) {
-            document.getElementById("snap").style.visibility = "visible";
+            document.getElementById("snap").style.display = "block";
         }
         if (resarr[res] == restumblr) {
-            document.getElementById("tumb").style.visibility = "visible";
+            document.getElementById("tumb").style.display = "block";
         }
     
     }
