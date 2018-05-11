@@ -34,17 +34,23 @@ var restumblr = 'Tumblr';
 function myFunction(event) {
     key = event.which;
     if (key == 37) {
-        slide_left();
+        plusQuestions(-1);
     }
-    if (key == 39) {
-        slide_right();
-    }
+   
 }
 
+/*
+function highlightdot() {
+   document.getElementsByClassName("dot")[0].className = document.getElementsByClassName("dot")[0].className.replace(" active", "");
+}
+*/
+
+/*
 $(document).ready(function() {
-    $('#q-' + counter).attr("hidden", false);
-    document.getElementById("bkbtn").className = "btn btn-md disabled";
+    document.getElementsByClassName("dot")[0].style.
 });
+*/
+/*
 
 function slide_left() {
     $('#q-' + counter).attr("hidden", true);
@@ -70,11 +76,42 @@ function slide_right() {
         document.getElementById("bkbtn").className = "btn btn-md";
     }
 }
+*/
+
+
+var questionIndex = 1;
+showQuestions(questionIndex);
+
+function plusQuestions(n) {
+  showQuestions(questionIndex += n);
+}
+
+function currentQuestion(n) {
+  showQuestions(questionIndex = n);
+}
+
+function showQuestions(n) {
+    setTimeout(function() {
+  var i;
+  var questions = document.getElementsByClassName("question");
+  var dots = document.getElementsByClassName("dot");
+  if (n > questions.length) {questionIndex = 1}    
+  if (n < 1) {questionIndex = questions.length}
+  for (i = 0; i < questions.length; i++) {
+      questions[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  questions[questionIndex-1].style.display = "block";  
+  dots[questionIndex-1].className += " active";
+    },1000)
+}
 
 
 function calculate() {
     window.open('result.html', "_self");
-    var correctsm = Math.max(instagram, twitter, facebook, pintrest, youtube, snapchat, tumblr);
+        var correctsm = Math.max(instagram, twitter, facebook, pintrest, youtube, snapchat, tumblr);
     if (correctsm == instagram) {
         choice[j] = "Instagram";
 
@@ -111,15 +148,31 @@ function calculate() {
 
         j++;
     }
-    if (typeof(Storage) !== "undefined") {
+    if(instagram==0 && twitter==0 && facebook==0 && pintrest==0 && youtube==0 && snapchat==0 && tumblr==0)
+        {
+            choice=null;
+            localStorage.setItem("choice", JSON.stringify(choice));
+        }  
+    else{
+        if (typeof(Storage) !== "undefined")
         localStorage.setItem("choice", JSON.stringify(choice));
     }
 
 }
 
+
+
 function display() {
 
     choice = JSON.parse(localStorage.getItem("choice"));
+    if(choice==null)
+        {
+            document.getElementById("nochoice").style.display = "block";
+            document.getElementsByClassName("score")[0].style.display="none";
+            document.getElementsByClassName("score")[1].style.display="none";
+            //break;
+        }
+    
     var cholen = choice.length;
     for (var res = 0; res < cholen; res++) {
         resarr[res] = JSON.parse(localStorage.getItem("choice"))[res];
@@ -153,7 +206,7 @@ function display() {
 
 function calno() {
 
-    switch (counter) {
+    switch (questionIndex-1) {
 
         case 1:
             if (flagq1 == 1) {
@@ -222,7 +275,7 @@ function calno() {
 }
 
 function calyes() {
-    switch (counter) {
+    switch (questionIndex-1) {
         case 1:
             twitter++;
             instagram++;

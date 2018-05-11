@@ -1,0 +1,17 @@
+/* Positioning of fontawesome icons on startup page */
+
+ul {
+    position: relative;
+    top: 180px; left: 190px; /*for example purposes only*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    text-align: center;
+    position: absolute;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+}

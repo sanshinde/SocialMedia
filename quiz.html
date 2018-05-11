@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Animated Checkboxes and Radio Buttons with SVG</title>
+		<title>Social Media Quiz</title>
 		<meta name="description" content="Animated Checkboxes and Radio Buttons with SVG: Using SVG for adding some fancy 'check' animations to form inputs" />
 		<meta name="keywords" content="animated checkbox, svg, radio button, styled checkbox, css, pseudo element, form, animated svg" />
 		<meta name="author" content="Codrops" />
@@ -25,93 +25,107 @@
 		<script src="js/modernizr.custom.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 	</head>
-	<body onload="myFunction()">
+	<body onload="javascript:highlightdot()">
 		
 			<!-- Top Navigation -->				
 			
 				<form class="ac-custom ac-radio ac-fill" autocomplete="off" action="result.html">
 					<div class="container">
-                    <div id="q-1" hidden="true">
+                    <div id="q-1" class ="question">
                     <p id="que">Do you want to know the latest celebrity news?</p>
 					<ul>
-						<li><input id="r1" name="r1" type="radio" onchange="calyes()"><label for="r1">Yes</label></li>
-						<li><input id="r2" name="r1" type="radio" onchange="calno()"><label for="r2">No</label></li>
+						<li><input id="r1" name="r1" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r1">Yes</label></li>
+						<li><input id="r2" name="r1" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r2">No</label></li>
 						</ul>
                     </div> 
-                    <div id="q-2" hidden="true">
+                    <div id="q-2" class ="question" hidden="true">
                     <p id="que">Do you want to update people about big events in your life?</p>
                         <ul>
-						<li><input id="r3" name="r2" type="radio" onchange="calyes()"><label for="r3">Yes</label></li>
-						<li><input id="r4" name="r2" type="radio" onchange="calno()"><label for="r4">No</label></li>
+						<li><input id="r3" name="r2" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r3">Yes</label></li>
+						<li><input id="r4" name="r2" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r4">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-3" hidden="true">
+                    <div id="q-3" class ="question" hidden="true">
                     <p id="que">Do you want to update people about your day?</p>
                         <ul>
-						<li><input id="r5" name="r3" type="radio" onchange="calyes()"><label for="r5">Yes</label></li>
-						<li><input id="r6" name="r3" type="radio" onchange="calno()"><label for="r6">No</label></li>
+						<li><input id="r5" name="r3" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r5">Yes</label></li>
+						<li><input id="r6" name="r3" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r6">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-4" hidden="true">
+                    <div id="q-4" class ="question" hidden="true">
                     <p id="que">Do you want to learn things like new recipes, crafts, or DIY (do it yourself) projects?</p>
                         <ul>
-						<li><input id="r7" name="r4" type="radio" onchange="calyes()"><label for="r7">Yes</label></li>
-						<li><input id="r8" name="r4" type="radio" onchange="calno()"><label for="r8">No</label></li>
+						<li><input id="r7" name="r4" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r7">Yes</label></li>
+						<li><input id="r8" name="r4" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r8">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-5" hidden="true">
+                    <div id="q-5" class ="question" hidden="true">
                     <p id="que">Do you want to play games?</p>
                         <ul>
-						<li><input id="r9" name="r5" type="radio" onchange="calyes()"><label for="r9">Yes</label></li>
-						<li><input id="r10" name="r5" type="radio" onchange="calno()"><label for="r10">No</label></li>
+						<li><input id="r9" name="r5" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r9">Yes</label></li>
+						<li><input id="r10" name="r5" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r10">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-6" hidden="true">
+                    <div id="q-6" class ="question" hidden="true">
                     <p id="que">Do you want to text message people?</p>
                         <ul>
-						<li><input id="r11" name="r6" type="radio" onchange="calyes()"><label for="r11">Yes</label></li>
-						<li><input id="r12" name="r6" type="radio" onchange="calno()"><label for="r12">No</label></li>
+						<li><input id="r11" name="r6" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r11">Yes</label></li>
+						<li><input id="r12" name="r6" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r12">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-7" hidden="true">
+                    <div id="q-7" class ="question" hidden="true">
                     <p id="que">Do you want to picture message people?</p>
                         <ul>
-						<li><input id="r13" name="r7" type="radio" onchange="calyes()"><label for="r13">Yes</label></li>
-						<li><input id="r14" name="r7" type="radio" onchange="calno()"><label for="r14">No</label></li>
+						<li><input id="r13" name="r7" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r13">Yes</label></li>
+						<li><input id="r14" name="r7" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r14">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-8" hidden="true">
+                    <div id="q-8" class ="question" hidden="true">
                     <p id="que">Do you want to video message people?</p>
                         <ul>
-						<li><input id="r15" name="r8" type="radio" onchange="calyes()"><label for="r15">Yes</label></li>
-						<li><input id="r16" name="r8" type="radio" onchange="calno()"><label for="r16">No</label></li>
+						<li><input id="r15" name="r8" type="radio" onchange="calyes()" onclick="plusQuestions(1)"><label for="r15">Yes</label></li>
+						<li><input id="r16" name="r8" type="radio" onchange="calno()" onclick="plusQuestions(1)"><label for="r16">No</label></li>
 						</ul>
                     </div>
-                    <div id="q-9" hidden="true">
+                    <div id="q-9" class ="question" hidden="true">
                     <p id="que">Do you want to blog (blogging is sharing what you think by writing, taking pictures, or sharing videos)?</p>
                         <ul>
-						<li><input id="r17" name="r9" type="radio" onchange="calyes()"><label for="r17">Yes</label></li>
+						<li><input id="r17" name="r9" type="radio" onchange="calyes()" ><label for="r17">Yes</label></li>
 						<li><input id="r18" name="r9" type="radio" onchange="calno()"><label for="r18">No</label></li>
 						</ul>
                     </div>
                     </div>
+                    <div style="text-align:center; margin-top: 1em">
+  <span class="dot active" onclick="currentQuestion(1)"></span> 
+  <span class="dot" onclick="currentQuestion(2)"></span> 
+  <span class="dot" onclick="currentQuestion(3)"></span> 
+<span class="dot" onclick="currentQuestion(4)"></span> 
+  <span class="dot" onclick="currentQuestion(5)"></span> 
+  <span class="dot" onclick="currentQuestion(6)"></span>
+<span class="dot" onclick="currentQuestion(7)"></span> 
+  <span class="dot" onclick="currentQuestion(8)"></span> 
+  <span class="dot" onclick="currentQuestion(9)"></span>
+
+</div>
                      <div class="buttons">
             <div class="backbtn">
-               <button type="button" id="bkbtn" class="btn btn-md" onclick="slide_left()">Back</button>
+               <button type="button" id="bkbtn" class="btn btn-md" onclick="plusQuestions(-1)" style="text-align: center; position: inherit">Back</button>
             </div>
              
-            <div  class="nextbtn">
-               <button type="button" id="nxbtn" class="btn btn-md" onclick="slide_right()">Next</button>
-            </div>
-                         </div>
-          <div class="btn-wrapper">
-	       <button type="button" class="btn" id="sub" onclick="calculate(); drawParticles();" style="visibility: hidden" >Submit</button>
-              
-            </div>
+           
+             
+                    </div>
+          
                     
             <!-- <canvas id="canvas" width="200" height="200"></canvas>     
        -->
             
+                
+                    <div class="btn-wrapper">
+	       <button type="button" class="btn" id="sub" onclick="calculate();" >Submit</button>
+              
+            </div>
+                    
                </form>
 			
             

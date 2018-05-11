@@ -15,13 +15,16 @@
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/resultstyle.css">
+    <link type="text/css" rel="stylesheet" href="css/submitcss.css">
 
 </head>
 
 <body onload="javascript:display()"; style="background-color: aliceblue">
     <div class="res-container">
     <p class="score">You scored highest on: <span id="myText"></span></p>
-       
+        
+    <p id="nochoice"; style="display:none";>You selected No for all the questions or did not select either options for all the questions. Click on 'Play Again' button to retake the quiz!</p>
+        
     <div class="wrapper">
          
         <i id="fbook" class="fa fa-5x fa-facebook-square" onclick="window.open('http://www.facebook.com', '_blank')" title="facebook"; style="display:none;"></i>
@@ -34,6 +37,7 @@
             
     </div>
         <p class="score">Click on the icon(s) to create an account now!</p>
+        <button type="button" class="btn" id="sub" onclick="location.href='index.html'";>Play Again!</button> 
  </div>
 
 </body>
